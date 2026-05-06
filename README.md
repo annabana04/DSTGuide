@@ -1,3 +1,7 @@
+# Don't Starve Together Farming Guide
+
+Don't Stave Together farming guide with an interactive gardening plot.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
