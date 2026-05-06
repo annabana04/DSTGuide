@@ -1,0 +1,108 @@
+/* Nutrients.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        1px  1px 0 black;
+}
+
+.nutrients-page {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: white;
+    background: linear-gradient(
+        to right, 
+        transparent 0%,
+        transparent 10%,
+        #475e6c 10%,
+        rgba(97, 132, 160, 0.6) 40%,
+        rgba(97, 132, 160, 0.6) 70%,
+        #475e6c 90%,
+        transparent 90%,
+        transparent 100%
+        ),
+        url("src/images/nutrients.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 0 10%;
+}
+
+
+.nutrients-page h1 {
+    text-align: center;
+}
+
+.nutrients-page h2{
+    margin-left: 10px;
+    margin-bottom: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px white solid;
+}
+
+.nutrients-page h3 {
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.nutrients-page p {
+    margin-left: 10px;
+}
+
+.nutrients-page nav {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+    border-top: 2px solid #475e6c;
+    border-bottom: 2px solid #475e6c;
+    background-color: #475e6c;
+}
+
+.nutrients-page nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.nutrients-page nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nutrients-page nav a:hover {
+    color: #6f7171;
+}
+
+.nutrients-page table {
+    color: white;
+    font-weight: 900;
+    table-layout: bold;
+    border: 4px solid white;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+.nutrients-page th, .nutrients-page td {
+    border: 2px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+.nutrients-page th {
+    text-align: center;
+}
+
+.nutrients-page tbody td {
+    text-align: center;
+}
+
+.nutrients-page .yes {
+    background-color: #129a61;
+}

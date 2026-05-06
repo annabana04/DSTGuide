@@ -1,0 +1,207 @@
+/* Winter.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        1px  1px 0 black;
+}
+
+.winter-page {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: white;
+    background: linear-gradient(
+        to right, 
+        transparent 0%,
+        transparent 10%,
+        #595758 10%,
+        rgba(162, 166, 167, 0.7) 40%,
+        rgba(162, 166, 167, 0.7) 70%,
+        #595758 90%,
+        transparent 90%,
+        transparent 100%
+        ),
+        url("src/images/winter.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 0 10%;
+}
+
+
+.winter-page h1 {
+    text-align: center;
+}
+
+.winter-page h2{
+    margin-left: 10px;
+    margin-bottom: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px white solid;
+}
+
+.winter-page h3 {
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.winter-page p {
+    margin-left: 10px;
+}
+
+.winter-page nav {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+    border-top: 2px solid #595758;
+    border-bottom: 2px solid #595758;
+    background-color: #595758;
+}
+
+.winter-page nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.winter-page nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.winter-page nav a:hover {
+    color: #a2a6a7;
+}
+
+.winter-page table {
+    color: white;
+    font-weight: 900;
+    table-layout: bold;
+    border: 4px solid white;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+.winter-page th, .winter-page td {
+    border: 2px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+.winter-page th {
+    text-align: center;
+}
+
+.winter-page tbody td {
+    text-align: center;
+}
+
+.winter-page .yes {
+    background-color: #595758;
+}
+
+/* Crop and grid card stuff */
+
+.winter-page .crop-card {
+    background: rgb(127, 130, 130);
+    border: 2px solid #595758;
+    border-radius: 10px;
+    padding: 12px 16px;
+    width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    gap: 6px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    cursor: grab;
+}
+
+.winter-page .crop-card:active {
+    cursor: grabbing;
+}
+
+.winter-page .crop-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.winter-page .crop-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.winter-page .crop-card ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.winter-page .builder {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.winter-page .plot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    padding: 20px;
+    background: rgb(39, 31, 11);
+    border: 2px solid #ccc;
+    border-radius: 12px;
+}
+
+.winter-page .plot-grid .plot-cell {
+    background-color: rgb(162, 166, 167);
+    border: 1px solid rgb(162, 166, 167);
+    width: 100px;
+    height: 100px;
+}
+
+.winter-page .crop-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 800px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.winter-page .crop-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.winter-page .crop-list::--webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.winter-page .crops-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-state;
+    margin-top: 20px;
+}
+
+.winter-page .reset-button {
+    margin-top: 12px;
+    padding: 10px 16px;
+    width: 100%;
+    background: #595758;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.winter-page .reset-button:hover {
+    background: #888486;
+}

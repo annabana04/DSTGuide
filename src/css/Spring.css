@@ -1,0 +1,207 @@
+/* Spring.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        1px  1px 0 black;
+}
+
+.spring-page {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: white;
+    background: linear-gradient(
+        to right, 
+        transparent 0%,
+        transparent 10%,
+        #222a1b 10%,
+        rgba(218, 215, 172, 0.6) 40%,
+        rgba(218, 215, 172, 0.6) 70%,
+        #222a1b 90%,
+        transparent 90%,
+        transparent 100%
+        ),
+        url("src/images/spring.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 0 10%;
+}
+
+
+.spring-page h1 {
+    text-align: center;
+}
+
+.spring-page h2{
+    margin-left: 10px;
+    margin-bottom: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px white solid;
+}
+
+.spring-page h3 {
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.spring-page p {
+    margin-left: 10px;
+}
+
+.spring-page nav {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+    border-top: 2px solid #36432b;
+    border-bottom: 2px solid #36432b;
+    background-color: #36432b;
+}
+
+.spring-page nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.spring-page nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.spring-page nav a:hover {
+    color: #6f7171;
+}
+
+.spring-page table {
+    color: white;
+    font-weight: 900;
+    table-layout: bold;
+    border: 4px solid white;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+.spring-page th, .spring-page td {
+    border: 2px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+.spring-page th {
+    text-align: center;
+}
+
+.spring-page tbody td {
+    text-align: center;
+}
+
+.spring-page .yes {
+    background-color: #129a61;
+}
+
+/* Crop and grid card stuff */
+
+.spring-page .crop-card {
+    background: #5c714a;
+    border: 2px solid #222a1b;
+    border-radius: 10px;
+    padding: 12px 16px;
+    width: 180px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    flex-direction: column;
+    gap: 6px;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    cursor: grab;
+}
+
+.spring-page .crop-card:active {
+    cursor: grabbing;
+}
+
+.spring-page .crop-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.spring-page .crop-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.spring-page .crop-card ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.spring-page .builder {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.spring-page .plot-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    padding: 20px;
+    background: #222a1b;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+}
+
+.spring-page .plot-grid .plot-cell {
+    background-color: #5c714a;
+    border: 1px solid #5c714a;
+    width: 100px;
+    height: 100px;
+}
+
+.spring-page .crop-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 800px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+.spring-page .crop-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.spring-page .crop-list::--webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.spring-page .crops-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-state;
+    margin-top: 20px;
+}
+
+.spring-page .reset-button {
+    margin-top: 12px;
+    padding: 10px 16px;
+    width: 100%;
+    background: #222a1b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.spring-page .reset-button:hover {
+    background: #506440;
+}

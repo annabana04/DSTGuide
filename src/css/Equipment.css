@@ -1,0 +1,104 @@
+/* Equipment.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        1px  1px 0 black;
+}
+
+.equipment-page {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: white;
+    background: linear-gradient(
+        to right, 
+        transparent 0%,
+        transparent 10%,
+        #182f1a 10%,
+        rgba(143, 146, 103, 0.6) 40%,
+        rgba(143, 146, 103, 0.6) 70%,
+        #182f1a 90%,
+        transparent 90%,
+        transparent 100%
+        ),
+        url("src/images/equipment.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    padding: 0 10%;
+}
+
+
+.equipment-page h1 {
+    text-align: center;
+}
+
+.equipment-page h2{
+    margin-left: 10px;
+    margin-bottom: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px white solid;
+}
+
+.equipment-page h3 {
+    margin-top: 0px;
+    margin-left: 10px;
+}
+
+.equipment-page p {
+    margin-left: 10px;
+}
+
+.equipment-page nav {
+    display: flex;
+    justify-content: center;
+    padding: 0px 0px;
+    border-top: 2px solid #234425;
+    border-bottom: 2px solid #234425;
+    background-color: #234425;
+}
+
+.equipment-page nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.equipment-page nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.equipment-page nav a:hover {
+    color: #6f7171;
+}
+
+.equipment-page table {
+    color: rgb(240, 231, 231);
+    font-weight: 900;
+    table-layout: bold;
+    border: 4px solid white;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+.equipment-page th, .equipment-page td {
+    border: 2px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+.equipment-page th {
+    text-align: center;
+}
+
+.equipment-page tbody td {
+    text-align: center;
+}
